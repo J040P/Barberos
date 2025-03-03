@@ -1,0 +1,328 @@
+.Home{
+    background-image: url(../assets/Wallpaper_home.jpg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: transparent;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+header nav img{
+    width: 13rem;
+    height: auto;
+    align-items: center;
+}
+
+header nav ul{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+header nav ul li:hover{
+    color: #FF8234;
+}
+
+header nav div{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+header nav div button {
+  font-size: 18px;
+  color: #e1e1e1;
+  font-family: inherit;
+  font-weight: 800;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+}
+
+header nav div button:focus,
+header nav div button:hover {
+  color: #FFF;
+}
+
+header nav div button:focus:after,
+header nav div button:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+header nav div button:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #FF8234;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    height: 100vh;
+}
+
+main section {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+}
+
+main section .tittle{
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #e1e1e1;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+main section .text {
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 1.5;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+main section .btns {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    justify-content: center;
+}
+
+main section .btns .btn_ser{
+    width: 20rem;
+}
+
+main section .btns .btn_age{
+    background-color: #FFF;
+    color: #FF8234;
+}
+
+main section .btns .btn_age:hover{
+    background-color: #FF8234;
+    color: #FFf;
+}
+
+main section button {
+    color: #fff;
+    background: #FF8234;
+    font-family: "Poppins", sans-serif;
+    padding: 0.6em 1.3em;
+    font-weight: 700;
+    font-size: 18px;
+    border-radius: 0.4em;
+    cursor: pointer;
+    border: none;
+}
+  
+main section  button:hover {
+    background-color: #FFF;
+    color: #FF8234;
+    border: none;
+}
+
+.Galeria {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Galeria .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.Galeria .main h1{
+    margin-bottom: 2rem;
+    color: #FF8234;
+}
+.Galeria .main img {
+    border-radius: 16px;
+    margin-left: 1rem;
+    margin-bottom: .5rem;
+
+}
+
+.servico{
+    height: 100vh;
+    background-color: #d7d7d7;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.servico .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.servico .main .tittle{
+    justify-content: center;
+    margin-top: 1rem;
+    color: #FF8234;
+    margin-bottom: 1rem;
+}
+
+.servico .servi{
+    display: flex;
+    justify-content: space-around;
+    height: 80%;
+}
+
+.servico .servi .foto{
+    width: 40%;
+    height: 80%;
+}
+
+.servico .servi .foto img{
+    border-radius: 15px;
+}
+
+.servico .servi .list_ser{
+    width: 50%;
+}
+
+.servico .servi .list_ser li{
+    background-color: aliceblue;
+    margin-bottom: .5rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 15px;
+    align-items: center;
+}
+
+.servico .servi .list_ser li button{
+    color: #fff;
+    background-color: #FF8234;
+    font-size: 14px;
+    font-weight: 500;
+    padding: .5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+}
+
+@media (max-width: 425px) {
+    .Home{
+        height: 100vh;
+        width: 100vw;
+        margin-bottom: 1rem;
+    }
+    .Home header nav {
+        flex-direction: column;
+        align-items: center;
+        gap: .7rem;
+    }
+    .Home main section {
+        flex-direction: column;
+        align-items: center;
+        width: 95%;
+        .tittle{
+            font-size: 1rem;
+            margin-bottom: .5rem;
+        }
+        .text{
+            font-size: 0.8rem;
+        }
+        .btns{
+            flex-direction: column;
+            gap: 1rem;
+            .btn_ser{
+                width: 100%;
+            }
+        }
+        
+    }
+    .Galeria {
+        margin-top: 1rem;
+        width: 100%;
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .Galeria .row1{
+        display: none;
+        transition: transform 0.5s ease-in-out;
+    }
+    .Galeria .row2{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .Galeria .row2 img{
+        margin-left: 0;
+    }
+
+    .Galeria .slide {
+        object-fit: cover;
+    }
+
+    .servico{
+        margin-top: 1rem;
+    }
+
+    .servico .servi{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .servico .servi .foto{
+        display: none;
+    }
+
+    .servico .servi .list_ser{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .servico .servi .list_ser il{
+        padding: .5rem;
+        font-size: 10px;
+        font-weight: 300;
+    }
+    .servico .tittle {
+        font-size: 1.4rem;
+        margin-bottom: .5rem;
+        margin-top: .5rem;
+    }
+}
